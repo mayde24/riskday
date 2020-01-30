@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+
+body, html {
+  overflow-x: hidden;
+  margin: 0;
+  font-family: "Century Schoolbook L";
+}
+
+.hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+/* ScrollBar Style ---------- */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 transparent;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #D3AEA2;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #a1624c;
+}

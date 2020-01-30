@@ -1,0 +1,212 @@
+<div class="container jarallax">
+  <!-- Header Part -->
+  <div class="header" [ngClass]="{'header-blur': scrollData > 400 && largeur > 600}">
+    <!-- Logo -->
+    <div class="logo-container">
+      <img src="../assets/logo.png" alt="" class="logo">
+    </div>
+    <!-- Category -->
+    <div class="header-sub-container">
+      <div class="header-content">Programme</div>
+      <div class="header-content">Accès</div>
+      <div class="header-content">Contact</div>
+    </div>
+  </div>
+  <!-- END Header Part -->
+
+  <!-- Banner Part -->
+  <div class="banner">
+    <!-- Video -->
+    <video src="../../../assets/earth.mp4" [autoplay]="true" [loop]="true" [muted]="true" class="video-earth jarallax-my-video" id="video-earth"
+           [ngStyle]="{'filter': scrollData < 300 ? 'brightness(0.8)' : scrollData > 800 ? 'brightness(0.2)' : 'brightness(0.4)', 'transform': scrollData < 800 && !flag ? 'scale(' + (5 - (this.scrollData / 200)) + ')' : 'scale(1)'}"
+    ></video>
+    <!-- Banner text -->
+    <div class="title-banner">
+      <h1 class="title1"><span class="red-text">R</span>iskDay 20<span class="red-text">20</span></h1>
+      <h2 class="title2">Lorem ipsum dolor es pantium minus thermo.</h2>
+      <h3 class="title3">Le 13 mai 2020</h3>
+    </div>
+    <!-- Arrow down animated -->
+    <div class="arrow-down" id="arrow-down" [ngClass]="{'hidden': scrollData > 300}">
+      <i class="fas fa-2x fa-angle-down"></i>
+    </div>
+  </div>
+  <!-- END Banner Part -->
+
+  <!-- Programme Central -->
+  <div class="programme-text-container">
+    <h1 class="programme-text" [ngsReveal]="{ reset: false}">
+      <span class="red-text">H</span>aec subinde Constantius audiens et quaedam referente Thalassio doctus, quem eum odisse iam conpererat lege communi, scribens ad Caesarem blandius adiumenta paulatim illi subtraxit, sollicitari se simulans ne, uti est militare otium fere tumultuosum, in eius perniciem conspiraret, solisque scholis iussit esse contentum palatinis et protectorum cum Scutariis et Gentilibus, et mandabat Domitiano, ex comite largitionum, praefecto ut cum in Syriam venerit, Gallum, quem crebro acciverat, ad Italiam properare blande hortaretur et verecunde.
+    </h1>
+  </div>
+  <!-- END Programme central -->
+
+  <div class="programme-content">
+    <div class="programme-sub-content content-start">
+      <div id="outerContainer">
+        <div id="container">
+          <div class="title-content">
+            Conférences
+          </div>
+          <div class="item">
+          </div>
+          <div class="circle" style="animation-delay: 0s"></div>
+          <div class="circle" style="animation-delay: 1s"></div>
+          <div class="circle" style="animation-delay: 2s"></div>
+          <div class="circle" style="animation-delay: 3s"></div>
+        </div>
+      </div>
+      <div class="text-content" id="content1">
+        <span class="red-text">Q</span>uanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.
+      </div>
+    </div>
+    <div class="programme-sub-content content-end">
+      <div class="text-content" id="content2">
+        <span class="red-text">Q</span>uanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.
+      </div>
+      <div id="outerContainer">
+        <div id="container">
+          <div class="title-content">
+            Business
+          </div>
+          <div class="item">
+          </div>
+          <div class="circle" style="animation-delay: 0s"></div>
+          <div class="circle" style="animation-delay: 1s"></div>
+          <div class="circle" style="animation-delay: 2s"></div>
+          <div class="circle" style="animation-delay: 3s"></div>
+        </div>
+      </div>
+    </div>
+    <div class="programme-sub-content content-start">
+      <div id="outerContainer">
+        <div id="container">
+          <div class="title-content">
+            Workshop & Networking
+          </div>
+          <div class="item">
+          </div>
+          <div class="circle" style="animation-delay: 0s"></div>
+          <div class="circle" style="animation-delay: 1s"></div>
+          <div class="circle" style="animation-delay: 2s"></div>
+          <div class="circle" style="animation-delay: 3s"></div>
+        </div>
+      </div>
+      <div class="text-content" id="content3">
+        <span class="red-text">Q</span>uanta autem vis amicitiae sit, ex hoc intellegi maxime potest, quod ex infinita societate generis humani, quam conciliavit ipsa natura, ita contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.
+      </div>
+    </div>
+  </div>
+
+  <div class="all-container" [ngsRevealSet]="{reset: false}" [ngsInterval]="50" [ngsSelector]="'.ligne'">
+    <div class="inscription-container">
+      <div class="text-inscription">
+        <span class="red-text">I</span>ta contracta res est et adducta in angustum ut omnis caritas aut inter duos aut inter paucos iungeretur.<br>Quod ex infinita societate generis humani.
+      </div>
+      <div class="button-insc">
+        Inscription
+      </div>
+    </div>
+    <div id="map-container">
+      <div class="map" id="map" class="match-parent"></div>
+    </div>
+    <div class="address-container" [ngsRevealSet]="{reset: false}" [ngsInterval]="50" [ngsSelector]="'.acces'">
+      <div class="putain">
+        <div class="part-one">
+          <div class="address">
+            196 rue de Grenelle<br>75007, Paris
+          </div>
+          <div class="acces-container">
+            <div class="acces">
+              <img src="../../../assets/metro8.png" alt="" class="transport">
+              Ecole militaire<br>La Tour-Maubourg
+            </div>
+            <div class="ligne"></div>
+            <div class="acces">
+              <img src="../../../assets/bus69.jpg" alt="" class="transport">
+              St Pierre du Gros Cailou
+            </div>
+            <div class="ligne"></div>
+            <div class="acces">
+              <img src="../../../assets/bus80.jpg" alt="" class="transportt">
+              <img src="../../../assets/bus92.png" alt="" class="transport">
+              Brosquet<br>Grenelle
+            </div>
+          </div>
+        </div>
+        <div class="ligne-vertical"></div>
+        <div class="part-two" [ngsRevealSet]="{reset: false}" [ngsInterval]="50" [ngsSelector]="'.horaire'">
+          <div class="title-part">
+            <span class="red-text">H</span>oraires du RiskDay
+          </div>
+          <div class="horaire-container">
+            <div class="horaire">
+              <div class="space-right"><span class="red-text">8h30</span></div>
+              <div>Petit dejeuner</div>
+            </div>
+            <div class="ligne"></div>
+            <div class="horaire">
+              <div class="space-right"><span class="red-text">9h00 - 12h45</span></div>
+              <div>Interventions</div>
+            </div>
+            <div class="ligne"></div>
+            <div class="horaire">
+              <div class="space-right"><span class="red-text">14h00 - 18h00</span></div>
+              <div>Interventions</div>
+            </div>
+            <div class="ligne"></div>
+            <div class="horaire">
+              <div class="space-right"><span class="red-text">18h30</span></div>
+              <div>Afterwork</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ligne-mega"></div>
+      <div class="contact-container" [ngsRevealSet]="{reset: false}" [ngsInterval]="50" [ngsSelector]="'.contact'">
+        <div class="contact">
+          <div class="role">
+            <span class="red-text">R</span>esponsable du club risques
+          </div>
+          <div class="photo">
+            <img src="../../../assets/douadi.jpeg" alt="">
+          </div>
+          <div class="nom">
+            Yasmine Douadi
+          </div>
+          <div class="numero">
+            06 37 64 35 84
+          </div>
+        </div>
+        <div class="contact">
+          <div class="role">
+            <span class="red-text">A</span>jointe du club risques
+          </div>
+          <div class="photo">
+            <img src="../../../assets/koné.jpeg" alt="">
+          </div>
+          <div class="nom">
+            Mariam-Emmanuelle Koné
+          </div>
+          <div class="numero">
+            07 69 66 61 45
+          </div>
+        </div>
+        <div class="contact">
+          <div class="role">
+            <span class="red-text">C</span>oordinatrice du club risques
+          </div>
+          <div class="photo">
+            <img src="../../../assets/alami.jpeg" alt="">
+          </div>
+          <div class="nom">
+            Karima Alami
+          </div>
+          <div class="numero">
+            07 61 98 86 33
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
